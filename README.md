@@ -2,6 +2,10 @@
 
     src/main/resources/0.docx
 
+# 실제로 나와야 하는 파일
+
+    sample/realworld_example.docx
+
 # 예제
 
 - com.xxx.SampleVO.main : class를 이용해서 template render
