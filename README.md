@@ -41,3 +41,10 @@
 
 # device_list.docx
 /Users/m/bisweb/src/main/webapp/WEB-INF/views/bis_manager/equipInfo_edit.jsp
+
+# device_report_anytime.docx
+equipChkReportInfo_edit.jsp
+
+#staffWorkSheetInfo.docx
+equipWeekSheetList.jsp
+/Users/m/bisweb/src/main/webapp/WEB-INF/views/bis_manager/equipWeekSheetInfo_edit.jsp

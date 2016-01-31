@@ -10,7 +10,7 @@ import fr.opensagres.xdocreport.template.formatter.FieldsMetadata;
 import com.xxx.model.Broadcast;
 import com.xxx.model.Studio;
 
-public class GenerateXMLFields {
+public class GenerateXMLFields_staff_work {
 
     public static void main(String[] args) throws XDocReportException,IOException {
 
