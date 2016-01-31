@@ -3,6 +3,7 @@
 - 소스 : /src/main/java/com/xxx/WriteDeviceList.java
 - 비고 : 목록에서 인쇄할 항목을 체크박스로 선택한 후 VO에 밀어넣는다.
     DeviceList constructor -> DATETIME_NOW 에 현재 시간을 넣는다.
+    DeviceListItem.COUNT -> LOOP돌면서 만들어야 함.
 - 출력 파일명 : 장비현황.docx
 
 # 수시 점검 일지
