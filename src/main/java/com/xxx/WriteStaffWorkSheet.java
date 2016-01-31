@@ -1,7 +1,6 @@
 package com.xxx;
 
 import com.xxx.model.Broadcast;
-import com.xxx.model.Studio;
 import fr.opensagres.xdocreport.document.IXDocReport;
 import fr.opensagres.xdocreport.document.registry.XDocReportRegistry;
 import fr.opensagres.xdocreport.template.IContext;
@@ -16,10 +15,10 @@ import java.util.Map;
 /**
  * Created by christophedufour on 17/02/2014.
  */
-public class SampleUsingMap {
+public class WriteStaffWorkSheet {
 
     public static void main(String[] args) throws Exception {
-        InputStream in = SampleUsingMap.class.getResourceAsStream("/staffWorkSheetInfo.docx");
+        InputStream in = WriteStaffWorkSheet.class.getResourceAsStream("/staffWorkSheetInfo.docx");
         IXDocReport report = XDocReportRegistry.getRegistry().loadReport(in, TemplateEngineKind.Velocity);
         IContext context = report.createContext();
 

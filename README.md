@@ -10,7 +10,7 @@
 
 - com.xxx.SampleVO.main : class를 이용해서 template render
     - 출력물 : out.vo.docx
-- com.xxx.SampleUsingMap.main : map을 이용해서 template render
+- com.xxx.WriteStaffWorkSheet.main : map을 이용해서 template render
     - 출력물 : out.vo.docx
 
 # 참고용
@@ -38,13 +38,24 @@
     - 위 문서 링크를 따라 탬플릿 수정
 
 
+# 장비 목록
+- URL : http://qxqx.iptime.org/manager.do?acton=equipList
+- 소스 : /src/main/java/com/xxx/WriteDeviceList.java
+- 비고 : 목록에서 인쇄할 항목을 체크박스로 선택한 후 VO에 밀어넣는다.
+    DeviceList constructor -> DATETIME_NOW 에 현재 시간을 넣는다.
+- 출력 파일명 : 장비현황.docx
 
-# device_list.docx
-/Users/m/bisweb/src/main/webapp/WEB-INF/views/bis_manager/equipInfo_edit.jsp
+# 수시 점검 일지
+- URL : http://qxqx.iptime.org/manager.do?acton=equipChkReportList&check_yymm=2015-11&err_type=&check_gb=&location=&asset_nm=&checker_nm=
+- 소스 : /src/main/java/com/xxx/WriteDeviceReportAnytime.java
+- 비고 : 선택 파일 클릭 후 인쇄
+    DATETIME_NOW 에 현재 시간을 넣는다. INSP_NM = 감독관이름
+- 출력 파일명 : 수시점검일지_${CHECK_DATE}.docx
 
-# device_report_anytime.docx
-equipChkReportInfo_edit.jsp
+# 주간 점검 일지
+- URL : http://qxqx.iptime.org/manager.do?acton=equipWeekSheetList&check_yymm=2015-11
+- 소스 : /src/main/java/com/xxx/WriteDeviceReportWeekly.java
+- 비고 : 선택 파일 클릭 후 인쇄
+    INSPNAME = 감독관이름
+- 출력 파일명 : 주간점검일지_${WORK_DATE}.docx
 
-#staffWorkSheetInfo.docx
-equipWeekSheetList.jsp
-/Users/m/bisweb/src/main/webapp/WEB-INF/views/bis_manager/equipWeekSheetInfo_edit.jsp

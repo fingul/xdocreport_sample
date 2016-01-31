@@ -17,7 +17,7 @@ public class GenerateXMLFields_device_report_weely {
         FieldsMetadata fieldsMetadata = new FieldsMetadata(TemplateEngineKind.Velocity.name());
 
         // 2) Load fields metadata from Java Class
-        fieldsMetadata.load("devicereportweekly", DeviceReportWeekly.class);
+        fieldsMetadata.load("i", DeviceReportWeekly.class);
         // Here load is called with true because model is a list of Developer.
 
 

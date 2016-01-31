@@ -18,7 +18,7 @@ public class GenerateXMLFields_device_report_anytime {
         FieldsMetadata fieldsMetadata = new FieldsMetadata(TemplateEngineKind.Velocity.name());
 
         // 2) Load fields metadata from Java Class
-        fieldsMetadata.load("devicereportanytime", DeviceReportAnytime.class);
+        fieldsMetadata.load("i", DeviceReportAnytime.class);
         // Here load is called with true because model is a list of Developer.
 
 
