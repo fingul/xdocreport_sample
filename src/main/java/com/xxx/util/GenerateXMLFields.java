@@ -25,7 +25,7 @@ public class GenerateXMLFields {
         // 3) Generate XML fields in the file "project.fields.xml".
         // Extension *.fields.xml is very important to use it with MS Macro XDocReport.dotm
         // FieldsMetadata#saveXML is called with true to indent the XML.
-        File xmlFieldsFile = new File("project.fields.xml");
+        File xmlFieldsFile = new File("staff.worksheet.fields.xml");
         fieldsMetadata.saveXML(new FileOutputStream(xmlFieldsFile), true);
     }
 }

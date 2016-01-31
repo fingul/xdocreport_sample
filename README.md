@@ -37,3 +37,7 @@
 
     - 위 문서 링크를 따라 탬플릿 수정
 
+
+
+# device_list.docx
+/Users/m/bisweb/src/main/webapp/WEB-INF/views/bis_manager/equipInfo_edit.jsp

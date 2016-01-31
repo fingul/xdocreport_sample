@@ -19,7 +19,7 @@ import java.util.Map;
 public class SampleUsingMap {
 
     public static void main(String[] args) throws Exception {
-        InputStream in = SampleUsingMap.class.getResourceAsStream("/0.docx");
+        InputStream in = SampleUsingMap.class.getResourceAsStream("/staffWorkSheetInfo.docx");
         IXDocReport report = XDocReportRegistry.getRegistry().loadReport(in, TemplateEngineKind.Velocity);
         IContext context = report.createContext();
 
@@ -33,7 +33,13 @@ public class SampleUsingMap {
         studio.put("Pm2", "pm2");
         studio.put("Am_step", "am_step");
         studio.put("Pm_step", "pm_step");
-        studio.put("Cast", "cast");
+        studio.put("Cast_dawn1", "새벽1");
+        studio.put("Cast_dawn2", "새벽2");
+        studio.put("Cast_morning1", "아침1");
+        studio.put("Cast_morning2", "아침2");
+        studio.put("Cast_default1", "통상1");
+        studio.put("Cast_default2", "통상2");
+        studio.put("Cast_midnight", "저녁");
         studio.put("Total", "total");
         studio.put("Note", "note");
         studio.put("Writer", "writer");
@@ -52,7 +58,7 @@ public class SampleUsingMap {
         metadata.addFieldAsList("broadcasts.Total");
         report.setFieldsMetadata(metadata);
 
-        OutputStream out = new FileOutputStream(new File("out.map.docx"));
+        OutputStream out = new FileOutputStream(new File("staffWorkSheetInfo.out.docx"));
         report.process(context, out);
 
     }
