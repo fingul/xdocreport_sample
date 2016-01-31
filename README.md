@@ -1,6 +1,26 @@
-# 템플릿 파일
+# 장비 목록
+- URL : http://qxqx.iptime.org/manager.do?acton=equipList
+- 소스 : /src/main/java/com/xxx/WriteDeviceList.java
+- 비고 : 목록에서 인쇄할 항목을 체크박스로 선택한 후 VO에 밀어넣는다.
+    DeviceList constructor -> DATETIME_NOW 에 현재 시간을 넣는다.
+- 출력 파일명 : 장비현황.docx
 
-    src/main/resources/0.docx
+# 수시 점검 일지
+- URL : http://qxqx.iptime.org/manager.do?acton=equipChkReportList&check_yymm=2015-11&err_type=&check_gb=&location=&asset_nm=&checker_nm=
+- 소스 : /src/main/java/com/xxx/WriteDeviceReportAnytime.java
+- 비고 : 선택 파일 클릭 후 인쇄
+    DATETIME_NOW 에 현재 시간을 넣는다. INSP_NM = 감독관이름
+- 출력 파일명 : 수시점검일지_${CHECK_DATE}.docx
+
+# 주간 점검 일지
+- URL : http://qxqx.iptime.org/manager.do?acton=equipWeekSheetList&check_yymm=2015-11
+- 소스 : /src/main/java/com/xxx/WriteDeviceReportWeekly.java
+- 비고 : 선택 파일 클릭 후 인쇄
+    INSPNAME = 감독관이름
+- 출력 파일명 : 주간점검일지_${WORK_DATE}.docx
+
+# 스탭 작업 일지
+- 소스 : /src/main/java/com/xxx/WriteStaffWorkSheet.java
 
 # 실제로 나와야 하는 파일
 
@@ -37,25 +57,4 @@
 
     - 위 문서 링크를 따라 탬플릿 수정
 
-
-# 장비 목록
-- URL : http://qxqx.iptime.org/manager.do?acton=equipList
-- 소스 : /src/main/java/com/xxx/WriteDeviceList.java
-- 비고 : 목록에서 인쇄할 항목을 체크박스로 선택한 후 VO에 밀어넣는다.
-    DeviceList constructor -> DATETIME_NOW 에 현재 시간을 넣는다.
-- 출력 파일명 : 장비현황.docx
-
-# 수시 점검 일지
-- URL : http://qxqx.iptime.org/manager.do?acton=equipChkReportList&check_yymm=2015-11&err_type=&check_gb=&location=&asset_nm=&checker_nm=
-- 소스 : /src/main/java/com/xxx/WriteDeviceReportAnytime.java
-- 비고 : 선택 파일 클릭 후 인쇄
-    DATETIME_NOW 에 현재 시간을 넣는다. INSP_NM = 감독관이름
-- 출력 파일명 : 수시점검일지_${CHECK_DATE}.docx
-
-# 주간 점검 일지
-- URL : http://qxqx.iptime.org/manager.do?acton=equipWeekSheetList&check_yymm=2015-11
-- 소스 : /src/main/java/com/xxx/WriteDeviceReportWeekly.java
-- 비고 : 선택 파일 클릭 후 인쇄
-    INSPNAME = 감독관이름
-- 출력 파일명 : 주간점검일지_${WORK_DATE}.docx
 
