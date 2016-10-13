@@ -36,13 +36,17 @@
 
 # 참고용
 
-- 문서 : <https://code.google.com/p/xdocreport/wiki/DocxReportingQuickStart>
+- 문서 : 
+    현재 : <https://code.google.com/archive/p/xdocreport/>
+    이동 중임(2016년10월 현재) : <https://github.com/opensagres/xdocreport/wiki>
 
 - VO에서XML 만들어 주는 코드 : GenerateXMLFields.java
 
 - 윈도우10, 워드2007 기준 매크로 실행 방법 및 탬플릿 수정 방법
 
     - 아래 파일을 다운로드해서 c:\ 에 압축푼다.
+
+        https://code.google.com/archive/p/xdocreport/downloads
 
         https://code.google.com/p/xdocreport/downloads/detail?name=fr.opensagres.xdocreport.document.tools-1.0.2-distribution.zip&can=2&q=
 
