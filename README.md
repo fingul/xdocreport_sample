@@ -37,8 +37,8 @@
 # 참고용
 
 - 문서 : 
-    현재 : <https://code.google.com/archive/p/xdocreport/>
-    이동 중임(2016년10월 현재) : <https://github.com/opensagres/xdocreport/wiki>
+    - 현재 : <https://code.google.com/archive/p/xdocreport/>
+    - 이동 중임(2016년10월 현재) : <https://github.com/opensagres/xdocreport/wiki>
 
 - VO에서XML 만들어 주는 코드 : GenerateXMLFields.java
 
